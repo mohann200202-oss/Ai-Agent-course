@@ -176,6 +176,7 @@ calorie_agent_with_search_guarded = Agent(
     instructions="""
     * You are a helpful nutrition assistant giving out calorie information.
     * You give concise answers.
+    * Always respond in English, even if the user or search results use another language.
     * You follow this workflow:
         0) First, use the calorie_lookup_tool to get the calorie information of the ingredients. But only use the result if it's explicitly for the food requested in the query.
         1) If you couldn't find the exact match for the food or you need to look up the ingredients, search the EXA web to figure out the exact ingredients of the meal.
